@@ -6,7 +6,7 @@ class GeminiService {
   private model: any;
 
   constructor() {
-    const API_KEY = 'AIzaSyCK2l9Lz3mb7wauMeF5y03dm_NeVPIGrWU';
+    const API_KEY = 'your_api_key';
     this.genAI = new GoogleGenerativeAI(API_KEY);
     // Use the correct model name for the current API version
     this.model = this.genAI.getGenerativeModel({ model: 'gemini-1.5-flash' });
